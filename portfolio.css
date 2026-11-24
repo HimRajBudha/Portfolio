@@ -1,0 +1,217 @@
+
+/* =================================
+   GLOBAL CSS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111827;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   HEADER CSS
+================================= */
+
+.header {
+    background-color: #1f2937;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+}
+ .logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+
+.logo-image {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    display: block;
+    overflow: hidden;
+    border: 2px solid #60a5fa;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #60a5fa;
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+/* =================================
+   MIDDLE CONTENT CSS
+================================= */
+
+.hero {
+    min-height: 450px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #60a5fa;
+}
+
+.hero h2 {
+    margin: 10px;
+}
+
+.hero p {
+    margin: 10px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 25px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.content-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.content-section h2 {
+    margin-bottom: 25px;
+    color: #60a5fa;
+}
+
+
+/* =================================
+   CARD CSS
+================================= */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f2937;
+
+    padding: 25px;
+
+    width: 220px;
+
+    border-radius: 12px;
+    border: 1px solid #374151;
+}
+
+.card h3 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   FOOTER CSS
+================================= */
+
+.footer {
+    background-color: #1f2937;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =================================
+   RESPONSIVE CSS
+================================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+
+        width: 100%;
+        flex-direction: column;
+
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+}
